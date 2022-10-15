@@ -6,7 +6,7 @@ header {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: -100px;
-    background-size: 100%;
+    background-size: cover;
     position: relative;
 
     .arrow-down {
@@ -18,19 +18,19 @@ header {
         transform: translate(-50%, -50%);
     }
 
-    .heading {
-        color: $White;
-        font-size: 3rem;
-        letter-spacing: 10px;
-        font-family: $ff-fraunces;
-        font-weight: $fw-fraunces-900;
-        text-transform: uppercase;
-        position: absolute;
-        top: 33%;
-        left: 50%;
-        // right: 50%;
-        bottom: 50%;
-        transform: translate(-50%, -50%);
+    .header {
+        margin-top: 5rem;
+        .heading {
+            color: $White;
+            font-size: 3rem;
+            letter-spacing: 10px;
+            font-family: $ff-fraunces;
+            font-weight: $fw-fraunces-900;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .navbar {
@@ -51,7 +51,32 @@ header {
         }
 
         .links {
-            
+
+            .link {
+                display: inline-block;
+                margin-right: 50px;
+                color: $White;
+                font-size: 22px;
+                font-family: $ff-barlow;
+                font-weight: $fw-barlow;
+            }
+
+            .main-btn {
+                color: black;
+                padding: 15px 30px;
+                background-color: $White;
+                border-radius: 50px;
+                font-size: 18px;
+                font-family: $ff-fraunces;
+                font-weight: $fw-fraunces-700;
+                text-transform: uppercase;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    background-color: #6fcfff;
+                    color: $White;
+                }
+            }
         }
     }
 }

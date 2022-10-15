@@ -7,7 +7,7 @@ header {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: -100px;
-  background-size: 100%;
+  background-size: cover;
   position: relative;
 }
 header .arrow-down {
@@ -18,18 +18,19 @@ header .arrow-down {
   right: 50%;
   transform: translate(-50%, -50%);
 }
-header .heading {
+header .header {
+  margin-top: 5rem;
+}
+header .header .heading {
   color: hsl(0deg, 0%, 100%);
   font-size: 3rem;
   letter-spacing: 10px;
   font-family: "Fraunces", serif;
   font-weight: 900;
   text-transform: uppercase;
-  position: absolute;
-  top: 33%;
-  left: 50%;
-  bottom: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .navbar {
   padding: 42px 47px 42px 41px;
@@ -43,6 +44,30 @@ header .navbar .logo img {
 header .navbar .hamburger {
   display: none;
 }
+header .navbar .links .link {
+  display: inline-block;
+  margin-right: 50px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 22px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+header .navbar .links .main-btn {
+  color: black;
+  padding: 15px 30px;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+header .navbar .links .main-btn:hover {
+  background-color: #6fcfff;
+  color: hsl(0deg, 0%, 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -51,4 +76,8 @@ header .navbar .hamburger {
 
 body {
   font-size: 18px;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
