@@ -10,6 +10,26 @@ header {
   background-size: cover;
   position: relative;
 }
+@media (max-width: 991px) {
+  header {
+    background-image: url(/images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -300px;
+    background-size: cover;
+    position: relative;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    background-image: url(/images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -200px;
+    background-size: cover;
+    position: relative;
+  }
+}
 header .arrow-down {
   position: absolute;
   top: 50%;
@@ -18,8 +38,32 @@ header .arrow-down {
   right: 50%;
   transform: translate(-50%, -50%);
 }
+@media (min-width: 992px) and (max-width: 1800px) {
+  header .arrow-down {
+    position: absolute;
+    top: 45%;
+  }
+}
+@media (max-width: 991px) {
+  header .arrow-down {
+    position: absolute;
+    top: 40%;
+  }
+}
+@media (max-width: 600px) {
+  header .arrow-down {
+    position: absolute;
+    top: 40%;
+    width: 40px;
+  }
+}
 header .header {
   margin-top: 5rem;
+}
+@media (max-width: 600px) {
+  header .header {
+    margin-top: 3rem;
+  }
 }
 header .header .heading {
   color: hsl(0deg, 0%, 100%);
@@ -31,6 +75,17 @@ header .header .heading {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 991px) {
+  header .header .heading {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 600px) {
+  header .header .heading {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 header .navbar {
   padding: 42px 47px 42px 41px;
